@@ -50,10 +50,19 @@
     align-items: center;
     font-size: 25px;
 }
-.pic {
+.gif {
     display: flex;
     justify-content: center;
     padding-top: 20px;
-    height: 20%;
+    height: 40%;
     width: auto;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.button-text {
+    padding: 5px;
+    font-size: 20px;
 }
