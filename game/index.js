@@ -35,7 +35,7 @@ checkBtnEl.addEventListener("click", () => {
       guessEl.style.color = "green";
       
       setTimeout(() => {
-          window.location.href = "./hbd/happy.html"; // ไปหน้าอวยพร (ตั้งชื่อไฟล์ได้ตามใจเลย)
+          window.location.href = "../hbd/happy.html"; // ไปหน้าอวยพร (ตั้งชื่อไฟล์ได้ตามใจเลย)
       }, 1500); // รอ 1.5 วิให้แสดงข้อความชนะก่อนค่อยเปลี่ยนหน้า
   }
   
