@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+}
+.bg {
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(251, 249, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    width: 400px;
+    height: 500px;
+    background-color:lavender;
+    border-radius: 10px;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.hbd {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 22px;
+}
+.name {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 22px;
+}
+.tab {
+    width: 390px;
+    height: 35px;
+    background-color:rgb(197, 197, 245);
+    border-radius:10px 10px 0px 0px;
+    margin-top: 7px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.zoomOut {
+    padding-right: 26px;
+    font-size: 25px;
+}
+.zoomIn {
+    padding-right: 23px;
+    font-size: 25px;
+}
+.close {
+    padding-right: 20px;
+    font-size: 25px;
+}
+.gif {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    height: 40%;
+    width: auto;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+/* .button-text {
+    padding: 5px;
+    font-size: 15px;
+} */
+
+
+/* CSS */
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 40px;
+  text-decoration: none;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    rgb(179, 179, 243) 0%,
+    rgb(174, 174, 243) 8%,
+    rgb(174, 174, 243) 92%,
+    rgb(174, 174, 243) 100%
+  );
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: rgb(197, 197, 245);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 15px;
+    padding: 12px 42px;
+  }
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(105%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
