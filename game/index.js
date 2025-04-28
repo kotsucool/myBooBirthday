@@ -5,7 +5,7 @@ const remainingChancesTextEl = document.querySelector(".chances");
 const remainingChancesEl = document.querySelector(".chance");
 
 let randomNumber = Math.floor(Math.random() * 100);
-let totalChances = 10;
+let totalChances = 5;
 
 checkBtnEl.addEventListener("click", () => {
     totalChances--;

@@ -7,12 +7,113 @@
     /* font-weight: <weight>; */
     font-style: normal;
 }
-.bg {
+/* .bg {
     height: 100vh;
     width: 100%;
-    /* background-color:rgb(251, 249, 255); */
+    background-color:rgb(251, 249, 255);
     background-image: url('/img/2.png');
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* background: linear-gradient(135deg, #a18cd1, #fbc2eb); */
+    background-image: url('/img/1.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
+  
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    padding-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 400px;
+}
+  
+.tab-arrange{
+    padding-left: 15px;
+}
+.tab {
+    width: 370px;
+    height: 35px;
+    background-color:rgb(197, 197, 245);
+    border-radius:10px 10px 0px 0px;
+    display: flex;
+    justify-content: end;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.zoomOut {
+    padding-right: 22px;
+    font-size: 25px;
+}
+.zoomIn {
+    padding-right: 21px;
+    font-size: 25px;
+}
+.close {
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+.message {
+    font-size: 18px;
+    color: #999999;
+    min-height: 135px;
+    padding-top: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    word-break: break-word;
+}
+  
+#playButton {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background: rgb(167, 167, 239);
+    color:  #ffffff;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+  
+#playButton:hover {
+    background: #8e6de3;
+}
+  
+.snow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+  
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: #ffb6b9;
+    font-size: 20px;
+    animation: fall linear infinite;
+}
+  
+@keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+    }
+}
+  

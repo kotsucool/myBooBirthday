@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- icon -->
-    <link rel="icon" href="/img/letter.png">
+    <link rel="icon" href="/img/cake.png">
 
     <!-- font -->
     <l<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,25 @@
 </head>
 
 <body>
-    <h1>Happy Birthday, My Love! 🎂💖</h1>
-    <p>ขอให้วันนี้เป็นวันที่เต็มไปด้วยรอยยิ้ม และความสุขมากที่สุดนะ~</p>
+    
+    <div class="snow-container"></div>
+
+  <div class="card">
+
+    <div class="tab-arrange">
+        <div class="tab">
+            <div class="zoomOut">-</div>
+            <div class="zoomIn">o</div>
+            <div class="close">x</div>
+        </div>
+    </div>
+
+    <div class="message" id="message"></div>
+    <button id="playButton">🎵 play music</button>
+    <audio id="bgMusic" src="/audio/hbd_song.mp3" loop></audio>
+  </div>
+
+  <script src="/hbd/script.js"></script>
+
 </body>
 </html>
