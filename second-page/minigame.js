@@ -4,8 +4,8 @@ const heart = document.getElementById('heart');
 const scoreDisplay = document.getElementById('score');
 
 function randomPosition() {
-    const x = Math.random() * window.innerWidth;
-    const y = Math.random() * window.innerHeight;
+    const x = Math.random() * (window.innerWidth - 100); // ป้องกันหัวใจออกจากขอบหน้าจอ
+    const y = Math.random() * (window.innerHeight - 100); // ป้องกันหัวใจออกจากขอบหน้าจอ
 
     heart.style.left = `${x}px`;
     heart.style.top = `${y}px`;
