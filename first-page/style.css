@@ -20,8 +20,8 @@
     height: 500px;
     background-color:lavender;
     border-radius: 10px;
-
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .hbd {
     display: flex;
@@ -45,13 +45,14 @@
     display: flex;
     justify-content: end;
     align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .zoomOut {
-    padding-right: 26px;
+    padding-right: 22px;
     font-size: 25px;
 }
 .zoomIn {
-    padding-right: 23px;
+    padding-right: 21px;
     font-size: 25px;
 }
 .close {
